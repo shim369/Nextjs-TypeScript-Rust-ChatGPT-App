@@ -27,7 +27,7 @@ async fn fetch_chatgpt_response(question: &str, api_key: &str) -> Result<String,
         .header("Authorization", format!("Bearer {}", api_key))
         .json(&serde_json::json!({
             "prompt": prompt,
-            "max_tokens": 50,
+            "max_tokens": 1000,
             "n": 1,
             "stop": ["\n"]
         }))
