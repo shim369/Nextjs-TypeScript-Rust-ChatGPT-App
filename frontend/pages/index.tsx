@@ -44,7 +44,7 @@ export default function Home() {
             <textarea className={styles.question} value={question} onChange={handleQuestionChange} placeholder="Enter your question here"></textarea>
             <button className={styles.button} onClick={handleGetAnswer}>Get Answer</button>
           </div>
-          {answer && <pre className={styles.answer}>{answer}</pre>}
+          {answer && <p className={styles.answer}>{answer}</p>}
         </div>
       </main>
     </div>
